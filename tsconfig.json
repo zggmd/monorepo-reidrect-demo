@@ -1,0 +1,7 @@
+{
+  "extends": "./src/.umi/tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "jsx": "react-jsx"
+  },
+}

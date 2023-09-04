@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "author": "songsz <song.shangzhi3@neolink.com>",
+  "scripts": {
+    "dev": "pnpm run build:all && umi dev",
+    "build": "umi build",
+    "build:all": "pnpm run -r build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "umi": "^4.0.79"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "father": "^4.3.1",
+    "typescript": "^5.2.2",
+    "@monorepo-reidrect-demo/add": "workspace:*",
+    "@monorepo-reidrect-demo/utils": "workspace:*"
+  }
+}

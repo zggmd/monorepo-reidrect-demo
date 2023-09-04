@@ -1,0 +1,17 @@
+{
+  "name": "@monorepo-reidrect-demo/utils",
+  "version": "0.0.1",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build",
+    "pub": "npm run prepublishOnly && npm publish --registry http://dev-npm.tenxcloud.net"
+  },
+  "dependencies": {
+    "@monorepo-reidrect-demo/add": "workspace:*"
+  }
+}
